@@ -1,21 +1,19 @@
 import re
-x = input("Enter an input")    #INPUT CONTAINS INT OR FLOAT
+x = input("Enter an input") 
 
-#a = 'x'
-
-if x.isdigit():
+if x.isdigit():                                        #checking whether input contains integer and finding whether the integer is even or odd
     if int(x) % 2 == 0:
-        print("{} is an even int".format(x))
+        print("It is an even int")
     else:
-        print("{} is an odd int".format(x))
+        print("Itis an odd int")
 
-elif re.search("\d+\.\d+",x):
+elif re.search("\d+\.\d+",x):                         #checking whether input contains float values
         print("Float")
-else:
-    print(x)
+else:                                                 #if input doesn't contain integer or float then it is a string by default
+    print(x)                                         
     print("It is a string")
-
-    print("1.Capitalizing the string")
+                                                      
+    print("1.Capitalizing the string")                #performing all string operations
     print(x.capitalize())
 
     print("2.Converting to Uppercase")
